@@ -17,7 +17,7 @@ face_bug = None    # 处理表情解决方法
                      isFriendChat=True, isGroupChat=True)
 def handler_receive_msg(msg):    # 将接收到的消息存放在字典中，不接受不具有撤回功能的信息
     global face_bug     # 全局变量
-    msg_time_rec = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())   # 格式化本地时间戳 e: 2018-09-04 22:02:08
+    msg_time_rec = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())   # 格式化本地时间戳 e: 2019/8/1
     msg_id = msg['MsgId']   # 消息ID
     msg_time = msg['CreateTime']    # 消息时间
     if 'ActualNickName' in msg:     # 判断是否为群消息
